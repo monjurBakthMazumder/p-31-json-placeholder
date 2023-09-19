@@ -18,10 +18,12 @@ import AlbumDetails from './Component/Albums/AlbumDetails';
 import PhotoDetails from './Component/Photos/PhotoDetails';
 import TodoDetails from './Component/Todos/TodoDetails';
 import UserDetails from './Component/Users/UserDetails'
+import NotFound from './Component/NotFound/NotFound';
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home/>,
+    errorElement:<NotFound/>,
     children:[
       {
         path: "",
